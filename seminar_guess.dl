@@ -1,0 +1,2 @@
+reserved(X,Y) v nothing(X,Y) :-
+    seminar(_,X,Y).
