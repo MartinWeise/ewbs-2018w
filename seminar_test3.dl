@@ -19,12 +19,12 @@ seminar(s3,1,5).
 seminar(s3,1,6).
 seminar(s4,2,5).
 seminar(s5,3,5).
-reservationsPerRoom(1,3).
-reservationsPerRoom(2,2).
+reservationsPerRoom(1,2).
+reservationsPerRoom(2,1).
 reservationsPerRoom(3,3).
 reservationsPerRoom(4,1).
 reservationsPerRoom(5,3).
 reservationsPerRoom(6,2).
-reservationsPerDay(1,5).
-reservationsPerDay(2,5).
+reservationsPerDay(1,3).
+reservationsPerDay(2,2).
 reservationsPerDay(3,4).
