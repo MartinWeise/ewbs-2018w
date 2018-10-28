@@ -25,7 +25,7 @@ network3:
 	./dlv -N=2 network.dl network_test3.dl test_network.dl -filter=d4,d5,UNCOMPUTED_d4,UNCOMPUTED_d5,UNEXPECTED_d4,UNEXPECTED_d5,DUPLICATED_d4,DUPLICATED_d5
 
 network4:
-	./dlv -N=2 network.dl network_test4.dl test_network.dl -filter=t,d4,d5,UNCOMPUTED_d4,UNCOMPUTED_d5,UNEXPECTED_d4,UNEXPECTED_d5,DUPLICATED_d4,DUPLICATED_d5
+	./dlv -N=2 network.dl network_test4.dl test_network.dl -filter=d4,d5,UNCOMPUTED_d4,UNCOMPUTED_d5,UNEXPECTED_d4,UNEXPECTED_d5,DUPLICATED_d4,DUPLICATED_d5
 
 network5:
 	./dlv -N=2 network.dl network_test5.dl test_network.dl -filter=d4,d5,UNCOMPUTED_d4,UNCOMPUTED_d5,UNEXPECTED_d4,UNEXPECTED_d5,DUPLICATED_d4,DUPLICATED_d5
