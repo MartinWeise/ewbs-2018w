@@ -38,3 +38,9 @@ network7:
 
 network8:
 	./dlv -N=2 network.dl network_test8.dl test_network.dl -filter=d4,d5,UNCOMPUTED_d4,UNCOMPUTED_d5,UNEXPECTED_d4,UNEXPECTED_d5,DUPLICATED_d4,DUPLICATED_d5
+
+network6-cbd:
+	./dlv -N=2 -FRmin -silent network.dl cbd.hyp cbd_cstr.dl network_test6.obs
+
+network-cbd:
+	./dlv -N=2 -FRmin -silent network.dl cbd.hyp cbd_cstr.dl cbd_fault.obs cbd_fault_m1_ok.obs
