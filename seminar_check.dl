@@ -1,5 +1,1 @@
-:- not #count{X: reserved(X,_)} = C,
-   C > reservationsPerDay(X,_).
-
-:- not #count{Y,X: reserved(X,Y)} = C,
-   C > reservationsPerDay(X,_).
+:- not #count{X : reserved(Y,X)} = C, reservationsPerDay(Y,C).

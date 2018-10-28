@@ -1,7 +1,7 @@
 all: network1
 
 seminar1:
-	./dlv seminar_test1.dl seminar_guess.dl seminar_check.dl -pfilter=reserved
+	./dlv seminar_test1.dl seminar_guess.dl seminar_check.dl -filter=reserved
 
 seminar2:
 	./dlv seminar_test2.dl seminar_guess.dl seminar_check.dl -pfilter=reserved
