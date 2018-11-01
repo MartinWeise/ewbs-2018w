@@ -1,1 +1,2 @@
-t(m1,1).
+% since m1 does not appear in the diagnoses alone it cannot be abnormal alone
+t(m1,0).

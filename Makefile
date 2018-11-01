@@ -44,3 +44,11 @@ network6-cbd:
 
 network-cbd:
 	./dlv -N=2 -FRmin -silent network.dl cbd.hyp cbd_cstr.dl cbd_fault.obs cbd_fault_m1_ok.obs
+	./dlv -N=2 -FRsingle -silent network.dl cbd.hyp cbd_cstr.dl cbd_fault.obs cbd_fault_m1_ok.obs
+	./dlv -N=2 -FR -silent network.dl cbd.hyp cbd_cstr.dl cbd_fault.obs cbd_fault_m1_ok.obs
+
+network-fault-c1-ab:
+	./dlv -N=2 -FRsingle -silent network.dl cbd.hyp cbd_cstr.dl cbd_fault.obs cbd_fault_c1_ab.obs
+
+network-fault-m1m2-ab:
+	./dlv -N=2 -FRmin -silent network.dl cbd.hyp cbd_cstr.dl cbd_fault.obs cbd_fault_m1m2_ab.obs
