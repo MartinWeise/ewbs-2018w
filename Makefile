@@ -55,3 +55,6 @@ network-fault-m1m2-ab:
 
 network-abd:
 	./dlv -N=2 -FD -silent abd_network.dl abd.hyp abd_cstr.dl abd_fault.dl abd_fault.obs
+
+network-abd-m1-wary:
+	./dlv -N=2 -FD -silent abd_network.dl abd.hyp abd_cstr.dl abd_fault.dl abd_fault_m1_wary.obs
