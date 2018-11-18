@@ -52,3 +52,6 @@ network-fault-c1-ab:
 
 network-fault-m1m2-ab:
 	./dlv -N=2 -FRmin -silent network.dl cbd.hyp cbd_cstr.dl cbd_fault.obs cbd_fault_m1m2_ab.obs
+
+network-abd:
+	./dlv -N=2 -FD -silent abd_network.dl abd.hyp abd_cstr.dl abd_fault.dl abd_fault.obs
