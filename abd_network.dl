@@ -14,105 +14,109 @@ t(m1,0) :-
     s1(m1,A),
     s2(m1,B),
     A = B,
-    not ab(m1).
+    ok(m1).
 t(m1,1) :-
     m(m1),
     s1(m1,A),
     s2(m1,B),
     A <> B,
-    not ab(m1).
+    ok(m1).
 
 % ====== m2 ======
 
 s1(m2,M) :- t(m1,M).
 s2(m2,M) :- d3(M).
+
 t(m2,0) :-
     m(m2),
     s1(m2,A),
     s2(m2,B),
     A = B,
-    not ab(m2).
+    ok(m2).
 t(m2,1) :-
     m(m2),
     s1(m2,A),
     s2(m2,B),
     A <> B,
-    not ab(m2).
+    ok(m2).
 
 % ====== w1 ======
 
 s1(w1,M) :- t(m1,M).
 s2(w1,M) :- d3(M).
+
 t(w1,1) :-
     w(w1),
     s1(w1,1),
     s2(w1,1),
-    not ab(w1).
+    ok(w1).
 t(w1,0) :-
     w(w1),
     s1(w1,0),
     s2(w1,0),
-    not ab(w1).
+    ok(w1).
 t(w1,0) :-
     w(w1),
     s1(w1,1),
     s2(w1,0),
-    not ab(w1).
+    ok(w1).
 t(w1,0) :-
     w(w1),
     s1(w1,0),
     s2(w1,1),
-    not ab(w1).
+    ok(w1).
 
 % ====== w2 ======
 
 s1(w2,M) :- d1(M).
 s2(w2,M) :- d2(M).
+
 t(w2,1) :-
     w(w2),
     s1(w2,1),
     s2(w2,1),
-    not ab(w2).
+    ok(w2).
 t(w2,0) :-
     w(w2),
     s1(w2,0),
     s2(w2,0),
-    not ab(w2).
+    ok(w2).
 t(w2,0) :-
     w(w2),
     s1(w2,1),
     s2(w2,0),
-    not ab(w2).
+    ok(w2).
 t(w2,0) :-
     w(w2),
     s1(w2,0),
     s2(w2,1),
-    not ab(w2).
+    ok(w2).
 
 % ====== c1 ======
 
 s1(c1,M) :- t(w2,M).
 s2(c1,M) :- t(w1,M).
+
 t(c1,0) :-
     c(c1),
     s1(c1,0),
     s2(c1,0),
-    not ab(c1).
+    ok(c1).
 t(c1,1) :-
     c(c1),
     s1(c1,1),
     s2(c1,1),
-    not ab(c1).
+    ok(c1).
 t(c1,1) :-
     c(c1),
     s1(c1,1),
     s2(c1,0),
-    not ab(c1).
+    ok(c1).
 t(c1,1) :-
     c(c1),
     s1(c1,0),
     s2(c1,1),
-    not ab(c1).
+    ok(c1).
 
 % ====== D4 ======
 
@@ -124,6 +128,7 @@ d5(M) :- t(c1,M).
 
 % ====== domain constraints ======
 
-:- s(A,V1), s(A,V2), V1 != V2.
+:- s1(A,V1), s1(A,V2), V1 != V2.
+:- s2(A,V1), s2(A,V2), V1 != V2.
 :- t(A,V1), t(A,V2), V1 != V2.
 :- t(A, 1), t(A, 0).
