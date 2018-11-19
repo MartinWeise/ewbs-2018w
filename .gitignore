@@ -3,7 +3,8 @@
 
 .idea/
 dlv
-sandbox.dl
+*.zip
+*.txt
 
 # User-specific stuff:
 .idea/**/workspace.xml

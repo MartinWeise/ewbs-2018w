@@ -61,3 +61,9 @@ network-abd-m1-wary:
 
 network-abd-empty:
 	./dlv -N=2 -FD -silent abd_network.dl abd.hyp abd_cstr.dl abd_fault.dl abd_fault_empty.obs
+
+zip-check:
+	./file_exists.sh
+
+zip:
+	zip 01429167_project.zip seminar_test1.dl seminar_test2.dl seminar_test3.dl seminar_test4.dl seminar_test5.dl seminar_guess.dl seminar_check.dl network_test1.dl network_test2.dl network_test3.dl network_test4.dl network_test5.dl network_test6.dl network_test7.dl network_test8.dl test_network.dl network.dl cbd.hyp cbd_cstr.dl cbd_fault.obs cbd_fault_m1_ok.obs cbd_fault_c1_ab.obs cbd_fault_m1m2_ab.obs abd.hyp abd_cstr.dl abd_network.dl abd_fault.dl abd_fault.obs abd_fault_m1_wary.obs abd_fault_empty.obs

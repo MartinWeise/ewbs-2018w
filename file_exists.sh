@@ -1,0 +1,32 @@
+# CHECK IF ALL FILES FOR SUBMISSION EXIST IN THE REPO
+# FILENAMES FROM THE TASK DESCRIPTION
+test -e ./seminar_test1.dl && echo OK || echo FAIL
+test -e ./seminar_test2.dl && echo OK || echo FAIL
+test -e ./seminar_test3.dl && echo OK || echo FAIL
+test -e ./seminar_test4.dl && echo OK || echo FAIL
+test -e ./seminar_test5.dl && echo OK || echo FAIL
+test -e ./seminar_guess.dl && echo OK || echo FAIL
+test -e ./seminar_check.dl && echo OK || echo FAIL
+test -e ./network_test1.dl && echo OK || echo FAIL
+test -e ./network_test2.dl && echo OK || echo FAIL
+test -e ./network_test3.dl && echo OK || echo FAIL
+test -e ./network_test4.dl && echo OK || echo FAIL
+test -e ./network_test5.dl && echo OK || echo FAIL
+test -e ./network_test6.dl && echo OK || echo FAIL
+test -e ./network_test7.dl && echo OK || echo FAIL
+test -e ./network_test8.dl && echo OK || echo FAIL
+test -e ./test_network.dl && echo OK || echo FAIL
+test -e ./network.dl && echo OK || echo FAIL
+test -e ./cbd.hyp && echo OK || echo FAIL
+test -e ./cbd_cstr.dl && echo OK || echo FAIL
+test -e ./cbd_fault.obs && echo OK || echo FAIL
+test -e ./cbd_fault_m1_ok.obs && echo OK || echo FAIL
+test -e ./cbd_fault_c1_ab.obs && echo OK || echo FAIL
+test -e ./cbd_fault_m1m2_ab.obs && echo OK || echo FAIL
+test -e ./abd.hyp && echo OK || echo FAIL
+test -e ./abd_cstr.dl && echo OK || echo FAIL
+test -e ./abd_network.dl && echo OK || echo FAIL
+test -e ./abd_fault.dl && echo OK || echo FAIL
+test -e ./abd_fault.obs && echo OK || echo FAIL
+test -e ./abd_fault_m1_wary.obs && echo OK || echo FAIL
+test -e ./abd_fault_empty.obs && echo OK || echo FAIL
