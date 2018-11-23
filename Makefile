@@ -66,4 +66,5 @@ zip-check:
 	./file_exists.sh
 
 zip:
-	zip 01429167_project.zip seminar_test1.dl seminar_test2.dl seminar_test3.dl seminar_test4.dl seminar_test5.dl seminar_guess.dl seminar_check.dl network_test1.dl network_test2.dl network_test3.dl network_test4.dl network_test5.dl network_test6.dl network_test7.dl network_test8.dl test_network.dl network.dl cbd.hyp cbd_cstr.dl cbd_fault.obs cbd_fault_m1_ok.obs cbd_fault_c1_ab.obs cbd_fault_m1m2_ab.obs abd.hyp abd_cstr.dl abd_network.dl abd_fault.dl abd_fault.obs abd_fault_m1_wary.obs abd_fault_empty.obs
+	zip 01429167_project.zip project/seminar_test1.dl project/seminar_test2.dl project/seminar_test3.dl project/seminar_test4.dl project/seminar_test5.dl project/seminar_guess.dl project/seminar_check.dl project/network_test1.dl project/network_test2.dl project/network_test3.dl project/network_test4.dl project/network_test5.dl project/network_test6.dl project/network_test7.dl project/network_test8.dl project/test_network.dl project/network.dl project/cbd.hyp project/cbd_cstr.dl project/cbd_fault.obs project/cbd_fault_m1_ok.obs project/cbd_fault_c1_ab.obs project/cbd_fault_m1m2_ab.obs project/abd.hyp project/abd_cstr.dl project/abd_network.dl project/abd_fault.dl project/abd_fault.obs project/abd_fault_m1_wary.obs project/abd_fault_empty.obs
+	
