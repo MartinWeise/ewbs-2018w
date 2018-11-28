@@ -1,9 +1,0 @@
-before(1,2).
-nextto(1,2).
-seminar(s1,1,1).
-seminar(s1,1,2).
-seminar(s2,2,1).
-reservationsPerRoom(1,2).
-reservationsPerRoom(2,1).
-reservationsPerDay(1,2).
-reservationsPerDay(2,1).
