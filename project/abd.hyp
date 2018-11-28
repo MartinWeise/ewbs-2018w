@@ -5,6 +5,4 @@ ok(w2).
 ok(c1).
 wary(m1).
 wary(m2).
-wary(w1).
-wary(w2).
 wary(c1).
